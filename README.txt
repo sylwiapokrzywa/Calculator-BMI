@@ -1,100 +1,77 @@
-Na zakończenie intensywnego kursu "Python od podstaw - Kurs 291 godzin, Software Development Academy" stworzyliśmy projekt końcowy, którym jest Calculator-BMI. 
-To był pierwszy projekt gdzie mieliśmy okazję pracować w grupie. Pracowaliśmy w 4- osobowym zespole. Na początku projektu końcowego wspólnie opracowaliśmy plan,
-jak i etapy naszej pracy, a także podział zadań. Podczas 42 godzinnej pracy mieliśmy możliwość pracy z GitHubem. 
-Nasz projekt jest to aplikacja webowa, która oblicza wskaźniki: BMI (Body Mass Index) oraz Kalkulator Kalorii na podstawie podanych przez użytkownika danych. 
-Aplikacja została zaimplementowana przy użyciu frameworka Django.
+At the end of the intensive course "Python from scratch - Course 291 hours, Software Development Academy" we created the final project, which is Calculator-BMI.
+It was the first project where we had the opportunity to work in a group. We worked in a team of 4. At the beginning of the final project, we developed a plan together,
+as well as the stages of our work, as well as the division of tasks. During 42 hours of work, we had the opportunity to work with GitHub.
+Our project is a web application that calculates the indicators: BMI (Body Mass Index) and Calorie Calculator based on the data provided by the user.
+The application was implemented using the Django framework.
 
-==================================================================================================================================================================
+====================================================================================================================================================================
 
+Installation:
 
-Instalacja
+Clone the repository to your local computer:
+bash Copy code git clone https://github.com/TomaszCiesla/Calculator-BMI Navigate to the project directory:
+bash Copy code cd calculator-bmi Create and activate a virtual environment:
+bash Copy code python -m venv venv source venv/bin/activate Install the required dependencies:
+Copy code pip install -r requirements.txt Run the database migrations:
+Copy code python manage.py migrate Start the development server:
+Copy code python manage.py runserver The application will be accessible at http://localhost:8000/.
 
-1. Sklonuj repozytorium na swój lokalny komputer:
+====================================================================================================================================================================
 
-git clone https://github.com/TomaszCiesla/Calculator-BMI
+Usage:
 
-2. Przejdź do katalogu projektu:
+Open a web browser and go to http://localhost:8000/. Enter your weight (in kilograms) and height (in meters) in the respective fields. Click the "Click here to check BMI" button. Enter your weight (in kilograms), height (in meters), age, select gender, and choose the level of physical activity in the Calories Calculator fields. Click the "Calculate Calories" button. The application will display your BMI and provide an interpretation of the result, along with information regarding calorie intake.
 
-cd calculator-bmi
+====================================================================================================================================================================
 
-3. Utwórz i aktywuj wirtualne środowisko:
-
-python -m venv venv
-source venv/bin/activate
-
-4.Zainstaluj wymagane zależności:
-
-pip install -r requirements.txt
-
-5. Wykonaj migracje bazy danych:
-
-python manage.py migrate
-
-6. Uruchom serwer deweloperski:
-
-python manage.py runserver
-
-7. Aplikacja będzie dostępna pod adresem http://localhost:8000/.
-
-==================================================================================================================================================================
-
-Użycie
-1. Otwórz przeglądarkę internetową i przejdź do http://localhost:8000/.
-2. Wprowadź swoją wagę (w kilogramach) i wzrost (w metrach) w odpowiednie pola.
-3. Kliknij przycisk "Click here to check BMI".
-4. Wprowadź swoją wagę (w kilogramach) i wzrost (w metrach), wiek i wybierz płeć oraz poziom aktywności fizycznej w odpowiednie pola Calories Calculator.
-5. Kliknij przycisk "Clalculate Calories"
-6. Aplikacja wyświetli Twoje BMI oraz interpretację wyniku, jak również informację dotyczącą spożywania kalorii.
-
-==================================================================================================================================================================
-
-Struktura projektu
-
-.
-├── calculator-bmi
-│   ├── templates
-│   │   └── my_site
-│   │       └── base.html
-│   ├── __init__.py
-│   ├── settings.py
-│   ├── urls.py
-│   └── wsgi.py
-├── .gitignore
-├── manage.py
+Project Structure
+. ├── calculator-bmi 
+│ ├── templates 
+│ │ └── my_site 
+│ │ └── base.html 
+│ ├── init.py 
+│ ├── settings.py 
+│ ├── urls.py 
+│ └── wsgi.py 
+├── .gitignore 
+├── manage.py 
 └── requirements.txt
 
-calculator-bmi - główny katalog aplikacji.
-templates - zawiera szablony HTML.
-base.html - szablon strony głównej.
-settings.py - plik konfiguracyjny Django.
-urls.py - definiuje ścieżki URL.
-wsgi.py - plik konfiguracyjny dla serwera WSGI.
-manage.py - skrypt do zarządzania projektu.
 
-==================================================================================================================================================================
+calculator-bmi: The main directory of the application. 
+templates: Contains HTML templates. 
+base.html: Template for the main page. 
+settings.py: Django configuration file. 
+urls.py: Defines URL paths. 
+wsgi.py: Configuration file for the WSGI server. 
+manage.py: Script for managing the project.
 
-Technologie
-Python 3.11
+====================================================================================================================================================================
+
+Technologies:
+
+Python 3.11 
 Django 4.2.2
 
-==================================================================================================================================================================
+====================================================================================================================================================================
 
-Autor:
+Authors:
+
 Tomasz Dymek
 E-mail: tomasdymek@gmail.com
 GitHub: tomasdymek
 
-Autor:
+
 Sylwia Pokrzywa
 sylwia.pokrzywa@gmail.com
 GitHub: sylwiapokrzywa
 
-Autor:
+
 Tomasz Cieśla
 E-mail: tomasz.ciesla81@gmail.com
 GitHub: TomaszCiesla
 
-Autor:
+
 Agnieszka Lenart
 E-mail: molines@op.pl
 GitHub: AgnieszkaLenart24
